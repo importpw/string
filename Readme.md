@@ -31,17 +31,17 @@ echo InPuT | string_upper
 #!/usr/bin/env import
 import "string"
 
-if string_includes "hello" "el"; then
-  echo "'hello' includes 'el'"
-else
-  echo "'hello' does not include 'el'"
-fi
+print_string_includes() {
+  if string_includes "$1" "$2"; then
+    echo "'$1' includes '$2'"
+  else
+    echo "'$1' does not include '$2'"
+  fi
+}
+
+print_string_includes "hello" "el"
 # 'hello' includes 'el'
 
-if string_includes "hello" "al"; then
-  echo "'hello' includes 'al'"
-else
-  echo "'hello' does not include 'al'"
-fi
+print_string_includes "hello" "al"
 # 'hello' does not include 'al'"
 ```
