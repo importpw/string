@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/usr/bin/env import
 set -euo pipefail
-eval "$(curl -sfLS import.pw)"
-import "assert@2.1.2"
-source ./string.sh
+
+import "assert@2.1.3"
+source "./string.sh"
 
 # string_lower
 assert_equal "$(echo AaBbCc123 | string_lower)" "aabbcc123"
