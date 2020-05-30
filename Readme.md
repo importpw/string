@@ -95,4 +95,5 @@ print_string_ends_with "hello" "lla"
 import "string"
 
 echo "hello" | string_strikethrough
+# h̶e̶l̶l̶o̶
 ```
