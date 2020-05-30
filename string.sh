@@ -48,3 +48,7 @@ string_ends_with() {
 	esac
 	return "$r"
 }
+
+string_strikethrough() {
+	sed "s/\(.\)/\1"$'\xcc\xb6'"/g"
+}
