@@ -87,3 +87,12 @@ print_string_ends_with "hello" "llo"
 print_string_ends_with "hello" "lla"
 # 'hello' does not end with 'lla'"
 ```
+
+### `string_strikethrough`
+
+```bash
+#!/usr/bin/env import
+import "string"
+
+echo "hello" | string_strikethrough
+```
